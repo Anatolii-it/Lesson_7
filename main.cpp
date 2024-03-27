@@ -1,13 +1,11 @@
 #include <iostream>
 #include "complex.h"
-#include <Windows.h>
 #include <conio.h>
 
 using namespace std;
 
 int main() {
-    SetConsoleCP(1251);
-    SetConsoleOutputCP(1251);
+    
     Complex num1 = { 3.0, 2.0 };
     Complex num2 = { 1.0, 4.0 };
 
@@ -16,10 +14,10 @@ int main() {
     Complex result_mul = multiply(num1, num2);
     Complex result_div = divide(num1, num2);
 
-    cout << "     Ñóìà: " << result_sum.real << " + " << result_sum.imag << "i" << endl;
-    cout << "  Ð³çíèöÿ: " << result_sub.real << " + " << result_sub.imag << "i" << endl;
-    cout << " Ìíîæåííÿ: " << result_mul.real << " + " << result_mul.imag << "i" << endl;
-    cout << "  Ä³ëåííÿ: " << result_div.real << " + " << result_div.imag << "i" << endl;
+    cout << "     ÑÑƒÐ¼Ð°: " << result_sum.real << " + " << result_sum.imag << "i" << endl;
+    cout << "  Ñ€Ñ–Ð·Ð½Ð¸Ñ†Ñ: " << result_sub.real << " + " << result_sub.imag << "i" << endl;
+    cout << " Ð¼Ð½Ð¾Ð¶ÐµÐ½Ð½Ñ: " << result_mul.real << " + " << result_mul.imag << "i" << endl;
+    cout << "  Ð´Ñ–Ð»ÐµÐ½Ð½Ñ: " << result_div.real << " + " << result_div.imag << "i" << endl;
     _getch();
     return 0;
 }
