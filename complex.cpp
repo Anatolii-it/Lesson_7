@@ -1,22 +1,20 @@
 #include "complex.h"
 #include <iostream>
+using namespace std;
 
-// Функція для переміщення прямокутника
-void moveRectangle(Rectangle& rect, double dx, double dy) {
-    rect.x += dx;
-    rect.y += dy;
+void moveRectangle(Rectangle& rect, float deltaX, float deltaY) {
+    rect.x += deltaX;
+    rect.y += deltaY;
 }
 
-// Функція для зміни розміру прямокутника
-void resizeRectangle(Rectangle& rect, double newWidth, double newHeight) {
+void resizeRectangle(Rectangle& rect, float newLength, float newWidth) {
+    rect.length = newLength;
     rect.width = newWidth;
-    rect.height = newHeight;
 }
 
-// Функція для друку прямокутника
-void printRectangle(Rectangle rect) {
-    std::cout << "Прямокутник:" << std::endl;
-    std::cout << "Ширина: " << rect.width << std::endl;
-    std::cout << "Висота: " << rect.height << std::endl;
-    std::cout << "Позиція (x, y): (" << rect.x << ", " << rect.y << ")" << std::endl;
+void printRectangle(const Rectangle& rect) {
+    cout << "Прямокутник: " << endl;
+    cout << "Довжина: " << rect.length << endl;
+    cout << "Ширина: " << rect.width << endl;
+    cout << "Координати лівого верхнього кута: (" << rect.x << ", " << rect.y << ")" << endl;
 }
