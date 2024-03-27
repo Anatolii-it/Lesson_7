@@ -19,10 +19,11 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Namber.h" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="complex.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="struct_namber.cpp" />
+    <ClInclude Include="complex.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
