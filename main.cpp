@@ -1,11 +1,12 @@
-#include "complex.h"
+﻿#include "complex.h"
 #include <iostream>
-#include <Windows.h>
+//#include <Windows.h>
 #include <conio.h>
 
 using namespace std;
 
 int main() {
+    
     Rectangle rect = {10.0, 5.0, 0.0, 0.0};
     printRectangle(rect);
     cout << "-----------------" << endl;

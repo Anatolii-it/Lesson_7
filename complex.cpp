@@ -1,4 +1,4 @@
-#include "complex.h"
+ï»¿#include "complex.h"
 #include <iostream>
 using namespace std;
 
@@ -13,8 +13,8 @@ void resizeRectangle(Rectangle& rect, float newLength, float newWidth) {
 }
 
 void printRectangle(const Rectangle& rect) {
-    cout << "Ïðÿìîêóòíèê: " << endl;
-    cout << "Äîâæèíà: " << rect.length << endl;
-    cout << "Øèðèíà: " << rect.width << endl;
-    cout << "Êîîðäèíàòè ë³âîãî âåðõíüîãî êóòà: (" << rect.x << ", " << rect.y << ")" << endl;
+    cout << "ÐŸÑ€ÑÐ¼Ð¾ÐºÑƒÑ‚Ð½Ð¸Ðº: " << endl;
+    cout << "Ð”Ð¾Ð²Ð¶Ð¸Ð½Ð°: " << rect.length << endl;
+    cout << "Ð¨Ð¸Ñ€Ð¸Ð½Ð°: " << rect.width << endl;
+    cout << "ÐšÐ¾Ð¾Ñ€Ð´Ð¸Ð½Ð°Ñ‚Ð¸ Ð»Ñ–Ð²Ð¾Ð³Ð¾ Ð²ÐµÑ€Ñ…Ð½ÑŒÐ¾Ð³Ð¾ ÐºÑƒÑ‚Ð°: (" << rect.x << ", " << rect.y << ")" << endl;
 }
